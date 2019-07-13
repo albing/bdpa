@@ -1,59 +1,61 @@
-
 <HTML>
-<HEAD>
-<TITLE>Simple PHP Shopping Cart</TITLE>
-<link href="style.css" type="text/css" rel="stylesheet" />
-</HEAD>
-<BODY>
-<div id="shopping-cart">
-<div class="txt-heading">Shopping Cart</div>
+	<HEAD>
+	<TITLE>Simple PHP Shopping Cart</TITLE>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</HEAD>
+	<BODY>
+		<div id="shopping-cart">
+			<div class="txt-heading">Shopping Cart</div>
 
-<a id="btnEmpty" href="Shop.php?act.ion=empty">Empty Cart</a>
-<div class="no-records">Your Cart is Empty</div>
-</div>
+			<a id="btnEmpty" href="Shop.php?act.ion=empty">Empty Cart</a>
+			<div class="no-records">Your Cart is Empty</div>
+		</div>
 
-<div id="product-grid">
-	<div class="txt-heading">Products</div>
+		<div id="product-grid">
+			<div class="txt-heading">Products</div>
 			<div class="product-item">
-			<form method="post" action="Shop.php?action=add&code=3DcAM01">
-			<div class="product-image"><img src="product-images/camera.jpg"></div>
-			<div class="product-tile-footer">
-			<div class="product-title">FinePix Pro2 3D Camera</div>
-			<div class="product-price">$1500.00</div>
-			<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+				<form method="post" action="Shop.php?action=add&code=3DcAM01">
+				<div class="product-image"><img src="product-images/camera.jpg"></div>
+				<div class="product-tile-footer">
+				<div class="product-title">FinePix Pro2 3D Camera</div>
+				<div class="product-price">$1500.00</div>
+				<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+				</div>
+				</form>
 			</div>
-			</form>
-		</div>
 			<div class="product-item">
-			<form method="post" action="Shop.php?action=add&code=USB02">
-			<div class="product-image"><img src="product-images/external-hard-drive.jpg"></div>
-			<div class="product-tile-footer">
-			<div class="product-title">EXP Portable Hard Drive</div>
-			<div class="product-price">$800.00</div>
-			<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+				<form method="post" action="Shop.php?action=add&code=USB02">
+					<div class="product-image"><img src="product-images/external-hard-drive.jpg"></div>
+					<div class="product-tile-footer">
+						<div class="product-title">EXP Portable Hard Drive</div>
+						<div class="product-price">$800.00</div>
+						<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+					</div>
+				</form>
 			</div>
-			</form>
-		</div>
 			<div class="product-item">
-			<form method="post" action="Shop.php?action=add&code=wristWear03">
-			<div class="product-image"><img src="product-images/watch.jpg"></div>
-			<div class="product-tile-footer">
-			<div class="product-title">Luxury Ultra thin Wrist Watch</div>
-			<div class="product-price">$300.00</div>
-			<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+				<form method="post" action="Shop.php?action=add&code=wristWear03">
+					<div class="product-image"><img src="product-images/watch.jpg"></div>
+					<div class="product-tile-footer">
+						<div class="product-title">Luxury Ultra thin Wrist Watch</div>
+						<div class="product-price">$300.00</div>
+						<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+					</div>
+				</form>
 			</div>
-			</form>
-		</div>
 			<div class="product-item">
-			<form method="post" action="Shop.php?action=add&code=LPN45">
-			<div class="product-image"><img src="product-images/laptop.jpg"></div>
-			<div class="product-tile-footer">
-			<div class="product-title">XP 1155 Intel Core Laptop</div>
-			<div class="product-price">$800.00</div>
-			<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+				<form method="post" action="Shop.php?action=add&code=LPN45">
+					<div class="product-image"><img src="product-images/laptop.jpg"></div>
+					<div class="product-tile-footer">
+						<div class="product-title">XP 1155 Intel Core Laptop</div>
+						<div class="product-price">$800.00</div>
+						<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+					</div>
+				</form>
 			</div>
-			</form>
 		</div>
-	</div>
-</BODY>
+	</BODY>
 </HTML>
