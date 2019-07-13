@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+    </head>
+    <body>
+        <h1> Register! Fill in the form below </h1>
+        
+        <form action="RegistrationLogic.php" method="post"> <!-- post(send data), get (request data) -->
+
+            <b>Info:</b>
+            
+            <p>First Name:
+                <input type="text" name="fName" size="30" value="" />
+            </p>
+            
+            <p>Last Name:
+                <input type="text" name="lName" size="30" value="" />
+            </p>
+            
+            <p>Password:
+                <input type="text" name="pass" size="30" value="" />
+            </p>
+            
+            <p>Email:
+                <input type="text" name="email" size="30" value="" />
+            </p>
+            
+            <p>Phone Number:
+                <input type="text" name="phoneNumber" size="30" value="" />
+            </p>
+            
+            <p> 
+            <input type="submit" name="submit" value="Send" />
+            </p>
+        </form>
+    </body>
+</html>
